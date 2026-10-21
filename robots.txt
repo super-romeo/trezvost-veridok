@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trezvost.veridok.ru/sitemap.xml
