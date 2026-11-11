@@ -8,6 +8,10 @@
 <meta name="description" content="Для тех, кто бросает пить или пьёт меньше: счётчик трезвых дней, дневник тяги и поводов, напоминания и план на трудные вечера.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Трезвый дневник</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Трезвый дневник</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Бросить пить — по одному дню: счётчик трезвости, дневник тяги и план на трудный вечер</h1>
-    <p class="sub">Для тех, кто решил бросить пить или пить меньше: приложение считает трезвые дни, помогает за минуту записать, когда и почему тянуло выпить, напоминает о вашей причине и подсказывает ваш же план на трудный вечер.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для тех кто решил бросить пить</p>
+      <h1 class="rise" style="--i:1" data-len="long">Бросить пить&nbsp;<span class="soft">— по одному дню: счётчик трезвости, дневник тяги и план на трудный вечер</span></h1>
+      <p class="rise" style="--i:2">Для тех, кто решил бросить пить или пить меньше: приложение считает трезвые дни, помогает за минуту записать, когда и почему тянуло выпить, напоминает о вашей причине и подсказывает ваш же план на трудный вечер.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" fill="#0a1524" font-weight="600">счётчик трезвости</text><line x1="120" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="292" font-size="32" fill="#0a1524">дневник тяги</text><rect x="130" y="360" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="392" font-size="32" fill="#0a1524">трудный вечер</text><rect x="130" y="460" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="492" font-size="32" fill="#0a1524">напоминает</text><rect x="700" y="260" width="360" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="320" font-size="32" fill="#0a1524" font-weight="600">план</text><rect x="740" y="500" width="50" height="100" rx="8" fill="#ffffff" /><rect x="815" y="440" width="50" height="160" rx="8" fill="#b9c3d2" /><rect x="890" y="520" width="50" height="80" rx="8" fill="#12397a" /><rect x="965" y="460" width="50" height="140" rx="8" fill="#ffffff" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Тех кто решил</dd></div>
+      <div><dt>Считает</dt><dd>Трезвые дни</dd></div>
+      <div><dt>Как</dt><dd>За минуту записать</dd></div>
+      <div><dt>Пока</dt><dd>Приложение в подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Счётчик трезвых дней</b><span>Сколько дней без алкоголя и сколько денег не потрачено на выпивку.</span><br><a class="btn" href="price.html" data-ev="feature_schetchik">Мне это нужно</a></div>
-      <div class="card"><b>Дневник тяги</b><span>За минуту: когда тянуло, насколько сильно, что было поводом и что помогло.</span><br><a class="btn" href="price.html" data-ev="feature_dnevnik">Мне это нужно</a></div>
-      <div class="card"><b>План на трудный момент</b><span>Ваш список того, что делать, когда тянет: позвонить, выйти, отвлечься.</span><br><a class="btn" href="price.html" data-ev="feature_plan">Мне это нужно</a></div>
-      <div class="card"><b>Напоминания</b><span>Короткое напоминание о вашей причине в те часы, когда тянет чаще всего.</span><br><a class="btn" href="price.html" data-ev="feature_napominaniya">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Счётчик трезвых дней</text><text x="120" y="490" font-size="30" fill="#566174">без алкоголя</text><line x1="140" y1="450" x2="680" y2="450" stroke="#dde2ea" stroke-width="3" /><rect x="170" y="410" width="56" height="40" rx="8" fill="#dfe8f7" /><rect x="290" y="370" width="56" height="80" rx="8" fill="#b9c3d2" /><rect x="410" y="330" width="56" height="120" rx="8" fill="#12397a" /><rect x="530" y="280" width="56" height="170" rx="8" fill="#dde2ea" /></svg></div>
+        <h3>Счётчик трезвых дней</h3><p>Сколько дней без алкоголя и сколько денег не потрачено на выпивку.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_schetchik">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Дневник тяги</text><text x="120" y="490" font-size="30" fill="#566174">что помогло</text><rect x="130" y="200" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="210" width="300" height="22" rx="8" fill="#dde2ea" /><rect x="130" y="280" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="290" width="240" height="22" rx="8" fill="#dde2ea" /><polyline points="140,304 150,314 164,294" fill="none" stroke="#12397a" stroke-width="4" /><rect x="130" y="360" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="200" y="370" width="340" height="22" rx="8" fill="#dde2ea" /></svg></div>
+        <h3>Дневник тяги</h3><p>За минуту: когда тянуло, насколько сильно, что было поводом и что помогло.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_dnevnik">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">План на трудный момент</text><text x="120" y="490" font-size="30" fill="#566174">когда тянет</text><rect x="140" y="190" width="420" height="270" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="170" y="220" width="320" height="16" rx="8" fill="#dde2ea" /><rect x="170" y="268" width="260" height="16" rx="8" fill="#dde2ea" /><rect x="170" y="316" width="300" height="16" rx="8" fill="#dde2ea" /><rect x="170" y="364" width="180" height="16" rx="8" fill="#dde2ea" /><circle cx="500" cy="400" r="36" fill="#dfe8f7" /><polyline points="484,400 496,414 520,382" fill="none" stroke="#12397a" stroke-width="5" /></svg></div>
+        <h3>План на трудный момент</h3><p>Ваш список того, что делать, когда тянет: позвонить, выйти, отвлечься.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_plan">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="36" fill="#0a1524" font-weight="600">Напоминания</text><text x="120" y="490" font-size="30" fill="#566174">вашей причине</text><rect x="150" y="200" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="280" y="200" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="200" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="540" y="200" width="100" height="60" rx="10" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><rect x="150" y="280" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="280" y="280" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="280" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="540" y="280" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="150" y="360" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="280" y="360" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="360" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="540" y="360" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Напоминания</h3><p>Короткое напоминание о вашей причине в те часы, когда тянет чаще всего.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_napominaniya">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Мужчина 42 лет решил не пить. На 9-й день в пятницу вечером тянет сильно: он открывает приложение, записывает «пятница, после работы, сила 7 из 10», видит свой план — выйти пройтись, позвонить брату — и через полчаса отмечает, что тяга прошла. Через месяц дневник показывает, что тяжелее всего — вечера пятницы.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Мужчина 42 лет решил не пить. На 9-й день в пятницу вечером тянет сильно: он открывает приложение, записывает «пятница, после работы, сила 7 из 10», видит свой план — выйти пройтись, позвонить брату — и через полчаса отмечает, что тяга прошла. Через месяц дневник показывает, что тяжелее всего — вечера пятницы.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="160" x2="960" y2="160" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">пятницу</text><circle cx="600" cy="160" r="22" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">сила</text><circle cx="960" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">план</text><rect x="140" y="300" width="920" height="400" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="180" y="380" font-size="36" fill="#0a1524" font-weight="600">тяга прошла</text><rect x="180" y="430" width="70" height="70" rx="12" fill="#dfe8f7" /><rect x="280" y="430" width="70" height="70" rx="12" fill="#12397a" /><rect x="380" y="430" width="70" height="70" rx="12" fill="#dfe8f7" /><rect x="480" y="430" width="70" height="70" rx="12" fill="#dfe8f7" /><text x="180" y="620" font-size="32" fill="#566174">вечера пятницы</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Решение бросить пить или пить меньше даётся тяжело не в первый день, а в обычный вечер через неделю или месяц, когда привычка возвращается. Многим помогает простое: видеть, сколько дней уже позади, понимать, что именно тянет выпить, и заранее знать, что делать в трудный момент.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Решение бросить пить или пить меньше даётся тяжело не в первый день, а в обычный вечер через неделю или месяц, когда привычка возвращается. Многим помогает простое: видеть, сколько дней уже позади, понимать, что именно тянет выпить, и заранее знать, что делать в трудный момент.</p>
     <p>Приложение начинается со счётчика. Вы отмечаете день, с которого не пьёте, и каждый день видите, сколько дней позади и сколько денег осталось у вас, а не ушло на выпивку. Если случился срыв, счётчик не стыдит: вы отмечаете его и начинаете заново, а прежние дни остаются в истории.</p>
     <p>Главное — дневник тяги. Когда тянет выпить, вы за минуту записываете, когда это было, насколько сильно, что стало поводом — усталость, компания, ссора, скука, праздник — и что помогло справиться. Через несколько недель дневник показывает, в какие дни и часы тяжелее всего и какие поводы повторяются.</p>
     <p>На основе этих записей вы составляете свой план на трудный момент: что делаете, когда тянет, — выйти на улицу, поесть, позвонить близкому человеку, лечь спать раньше. Когда тянет сильно, приложение показывает этот план первым, а не советы из интернета.</p>
@@ -104,31 +138,34 @@
     <p>Приложение не лечит зависимость и не заменяет помощь врача. Если пить вы бросить не можете, если есть тяжёлое похмелье, тревога, бессонница или другие признаки зависимости — обратитесь к врачу-наркологу или психотерапевту; приложение может помочь вести дневник и между визитами.</p>
     <p>Приложение рассчитано на взрослых, которые сами решили изменить отношения с алкоголем: бросить совсем, сделать паузу на месяц или пить реже. Им можно пользоваться с телефона в любое время и столько, сколько нужно.</p>
     <p>Сейчас приложение в подготовке: сначала мы проверяем, нужно ли оно людям, и только потом его создаём.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Поможет ли приложение бросить пить?</h3>
-    <p>Оно помогает видеть трезвые дни, понимать свои поводы и держать под рукой план на трудный момент. Лечить зависимость оно не может — для этого нужен врач.</p>
-    <h3>Нужно ли регистрироваться под своим именем?</h3>
-    <p>Нет. Данные остаются в вашем телефоне и вашем аккаунте.</p>
-    <h3>Что делать, если случился срыв?</h3>
-    <p>Отметить его и начать счётчик заново; прежние дни и записи остаются в истории.</p>
-    <h3>Кому лучше обратиться за помощью?</h3>
-    <p>К врачу-наркологу или психотерапевту, особенно если бросить не получается или есть тяжёлое состояние.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Приложение в подготовке, и мы проверяем, нужно ли оно людям.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Поможет ли приложение бросить пить?</h3><p>Оно помогает видеть трезвые дни, понимать свои поводы и держать под рукой план на трудный момент. Лечить зависимость оно не может — для этого нужен врач.</p></div>
+      <div class="split flip"><h3>Нужно ли регистрироваться под своим именем?</h3><p>Нет. Данные остаются в вашем телефоне и вашем аккаунте.</p></div>
+      <div class="split flip"><h3>Что делать, если случился срыв?</h3><p>Отметить его и начать счётчик заново; прежние дни и записи остаются в истории.</p></div>
+      <div class="split flip"><h3>Кому лучше обратиться за помощью?</h3><p>К врачу-наркологу или психотерапевту, особенно если бросить не получается или есть тяжёлое состояние.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Приложение в подготовке, и мы проверяем, нужно ли оно людям.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Начните с первого дня</h2>
-    <p><label>Что вы хотите<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>Бросить совсем</option><option>Сделать паузу на месяц</option><option>Пить реже</option><option>Пока не решил</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Начните с первого дня</h2>
+    </div>
+    <div class="tile stack">
+      <label>Что вы хотите<select data-ev-focus="form_start"><option value="">— выберите —</option><option>Бросить совсем</option><option>Сделать паузу на месяц</option><option>Пить реже</option><option>Пока не решил</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Трезвый дневник</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Дневник для самоконтроля. Не медицинская помощь и не лечение; при признаках зависимости обратитесь к врачу.</p>
+  <p>Дневник для самоконтроля. Не медицинская помощь и не лечение; при признаках зависимости обратитесь к врачу.</p>
 </div></footer>
 
 </body>
